@@ -23,6 +23,14 @@ class Response
     /**
      * Documentation for this.
      */
+    public function asPlain()
+    {
+        return $this->data;
+    }
+
+    /**
+     * Documentation for this.
+     */
     public function asArray()
     {
         return json_decode($this->data, true);
